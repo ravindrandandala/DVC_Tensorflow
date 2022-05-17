@@ -1,0 +1,27 @@
+schema: '2.0'
+stages:
+  prepare_callbacks:
+    cmd: python src/stage_03_prepare_callbacks.py --config=config/config.yaml --params=params.yaml
+    deps:
+    - path: config/config.yaml
+      md5: 4db7a9b350cef64dbcec22bbc21cdf63
+      size: 473
+    - path: params.yaml
+      md5: 82160aaf04677e26994fdfaad1cd1695
+      size: 126
+    - path: src/stage_03_prepare_callbacks.py
+      md5: 980ee20c59b2cfabb7356154a26172ea
+      size: 1802
+    - path: src/utils/all_utils.py
+      md5: 0fe9bcc4134f62977696fcc10a5dd5a5
+      size: 998
+    - path: src/utils/callbacks.py
+      md5: 47f9289a47896bc1e89dfce6edcee9d6
+      size: 1530
+    outs:
+    - path: artifacts/callbacks/checkpoint_cb.cb
+      md5: ed88b3a1396ef7f358e7217e1d0ae25b
+      size: 838
+    - path: artifacts/callbacks/tensorboard_cb.cb
+      md5: e6afe0b19962488b894d5b262d69dcf6
+      size: 664

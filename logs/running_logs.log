@@ -69,3 +69,67 @@ _________________________________________________________________
 
 [2022-05-17 00:08:10,378: INFO: stage_02_prepare_base_model]: stage two completed! base model is created >>>>>
 
+[2022-05-17 08:26:31,817: INFO: stage_03_prepare_callbacks]: >>>>> stage three started
+[2022-05-17 08:26:31,819: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2022-05-17 08:26:31,820: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2022-05-17 08:26:31,820: INFO: all_utils]: directory is created at artifacts\tensorboard_log_dir
+[2022-05-17 08:26:31,821: INFO: all_utils]: directory is created at artifacts\checkpoints
+[2022-05-17 08:26:31,821: INFO: all_utils]: directory is created at artifacts\callbacks
+[2022-05-17 08:26:31,822: INFO: callbacks]: tensorboard callback is being saved at artifacts\callbacks\tensorboard_cb.cb
+[2022-05-17 08:26:31,825: INFO: callbacks]: tensorboard callback is being saved at artifacts\callbacks\checkpoint_cb.cb
+[2022-05-17 08:26:31,825: INFO: stage_03_prepare_callbacks]: stage three completed! callbacks are prepared and saved as binary>>>>>
+
+[2022-05-17 08:44:43,890: INFO: stage_04_train]: >>>>> stage four started
+[2022-05-17 08:44:43,892: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2022-05-17 08:44:43,893: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2022-05-17 08:44:43,893: INFO: all_utils]: directory is created at artifacts\model
+[2022-05-17 08:44:44,317: INFO: models]: untrained model is read from: artifacts\base_model\updated_VGG16_base_model.h5
+[2022-05-17 08:44:44,318: INFO: callbacks]: saved callbacks are loaded from artifacts\callbacks
+[2022-05-17 08:44:44,424: INFO: data_management]: data augmentation is used for training
+[2022-05-17 08:44:44,530: INFO: data_management]: train and valid generator is created.
+[2022-05-17 08:44:44,557: ERROR: stage_04_train]: Image transformations require SciPy. Install SciPy.
+Traceback (most recent call last):
+  File "src/stage_04_train.py", line 71, in <module>
+    train_model(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "src/stage_04_train.py", line 49, in train_model
+    callbacks=callbacks
+  File "C:\Users\rdandala\.conda\envs\dvc_tf\lib\site-packages\keras\utils\traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\rdandala\.conda\envs\dvc_tf\lib\site-packages\keras_preprocessing\image\affine_transformations.py", line 281, in apply_affine_transform
+    raise ImportError('Image transformations require SciPy. '
+ImportError: Image transformations require SciPy. Install SciPy.
+[2022-05-17 08:47:40,149: INFO: stage_04_train]: >>>>> stage four started
+[2022-05-17 08:47:40,151: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2022-05-17 08:47:40,152: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2022-05-17 08:47:40,152: INFO: all_utils]: directory is created at artifacts\model
+[2022-05-17 08:47:40,481: INFO: models]: untrained model is read from: artifacts\base_model\updated_VGG16_base_model.h5
+[2022-05-17 08:47:40,482: INFO: callbacks]: saved callbacks are loaded from artifacts\callbacks
+[2022-05-17 08:47:40,588: INFO: data_management]: data augmentation is used for training
+[2022-05-17 08:47:40,695: INFO: data_management]: train and valid generator is created.
+[2022-05-17 08:47:40,712: ERROR: stage_04_train]: Image transformations require SciPy. Install SciPy.
+Traceback (most recent call last):
+  File "src/stage_04_train.py", line 71, in <module>
+    train_model(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "src/stage_04_train.py", line 49, in train_model
+    callbacks=callbacks
+  File "C:\Users\rdandala\.conda\envs\dvc_tf\lib\site-packages\keras\utils\traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\rdandala\.conda\envs\dvc_tf\lib\site-packages\keras_preprocessing\image\affine_transformations.py", line 281, in apply_affine_transform
+    raise ImportError('Image transformations require SciPy. '
+ImportError: Image transformations require SciPy. Install SciPy.
+[2022-05-17 08:50:16,511: INFO: stage_03_prepare_callbacks]: >>>>> stage three started
+[2022-05-17 08:50:16,514: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2022-05-17 08:50:16,515: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2022-05-17 08:50:16,515: INFO: all_utils]: directory is created at artifacts\tensorboard_log_dir
+[2022-05-17 08:50:16,516: INFO: all_utils]: directory is created at artifacts\checkpoints
+[2022-05-17 08:50:16,516: INFO: all_utils]: directory is created at artifacts\callbacks
+[2022-05-17 08:50:16,517: INFO: callbacks]: tensorboard callback is being saved at artifacts\callbacks\tensorboard_cb.cb
+[2022-05-17 08:50:16,519: INFO: callbacks]: tensorboard callback is being saved at artifacts\callbacks\checkpoint_cb.cb
+[2022-05-17 08:50:16,519: INFO: stage_03_prepare_callbacks]: stage three completed! callbacks are prepared and saved as binary>>>>>
+
+[2022-05-17 08:50:17,517: INFO: stage_01_load_save]: >>>>> stage one started
+[2022-05-17 08:50:17,519: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2022-05-17 08:50:17,526: INFO: all_utils]: directory is created at data/dog
+[2022-05-17 08:50:17,824: INFO: all_utils]: directory is created at data/cat
+[2022-05-17 08:50:18,023: INFO: stage_01_load_save]: stage one completed! all the data are saved in local >>>>>
+
